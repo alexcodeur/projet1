@@ -1,0 +1,15 @@
+/* Section services */
+#contenu_services
+{
+    flex-direction: column;
+}
+
+#contenu_services figure
+{
+    width: 100%;
+}
+
+#hauteur
+{
+    width: 100%;
+}

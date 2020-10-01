@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>WebAgency</title>
+        <!-- Encodage -->
+        <meta charset="utf-8" content="width=device-width"/>
+        
+        <!-- Feuille de styles -->
+        <link rel="stylesheet" href="css/style.css" />
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/awesome_min/font-awesome.min.css">
+        
+        <!-- Smartphone en portrait -->
+        <link rel="stylesheet" media="all and (max-device-width: 720px)" href="css/smartphone.css"/>
+        
+        <!-- Smartphone en paysage, tablette en portrait et petite tablette en paysage -->
+        <link rel="stylesheet" media="all and (max-width: 959px)" href="css/tablette.css"/>
+        
+        <!-- Tablette en paysage, écran d’ordinateur de taille petite et moyenne -->
+        <link rel="stylesheet" media="all and (min-width:960px) and (max-width:1280px)" href="css/ordinateur.css"/>
+        
+        <!-- Favicon du site -->
+        <link rel="icon" type="image/png" href="css/images/logo_favicon.png" />
+        
+    </head>
+
+    <body>
+        
+        <input type="checkbox" name="menu" id="menu" />
+        
+        <!-- Header, en-tête de la page -->
+        <header>
+            
+            <!-- Logo -->
+            <div id="logo_header">
+                
+                <img src="css/images/logo.png"  alt="Logo de WebAgency"/>
+            
+            </div>
+            
+            <!-- Menu -->
+            <label for="menu">
+            
+                <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+            
+            </label>
+            
+            <nav id="menu_acceuil">
+                
+                <ul>
+                 
+                    <li><a href="#banniere">Accueil</a></li>
+                    
+                    <li><a href="#services">Services</a></li>
+                    
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    
+                    <li><a href="#formulaire_contact">Contact</a></li>
+                    
+                </ul>
+            
+            </nav>
+            
+        </header> 
+        
+        <!-- Section bannière -->
+        <section id="banniere">
+            
+            <!-- Boutons de navigation -->
+            <input type="radio" name="liens" id="fleche_gauche" checked/>
+            
+            <input type="radio" name="liens" id="fleche_droite" />
+            
+            <!-- Image de fond 1 et 2 -->
+            <div id="slider">
+            
+                <label for="fleche_droite" class="label_droite"><i id="flechedroite" class="fa fa-angle-right" aria-hidden="true"></i></label>  
+                
+                <label for="fleche_gauche" class="label_gauche"><i id="flechegauche" class="fa fa-angle-left" aria-hidden="true"></i></label>
+                
+                <img src="css/images/slider/bg1.jpg" alt="bg1" id="image_une"/>
+
+                <img src="css/images/slider/bg2.jpg" alt="bg2" id="image_deux"/>
+                
+                <h1><span class="couleur_webagency">Webagency </span>: l'agence de tous vos projets !</h1>
+
+                <p>
+                    Vous avez un projet web ? La WebAgency vous aide à le réaliser !
+                </p>
+
+                <input type="button" value="Plus d'infos"/>
+                
+                <!-- Barre qui s'élargie (batôn magique) -->
+                <div id="barre_defilement"></div>
+                
+            </div>
+        
+        </section>
+        
+        <!-- Section Services -->
+        <section id="services">
+          
+            <div id="infos_services">
+                
+                <h1>Nos services</h1>
+
+                <div class="trait">
+
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+
+                </div>
+
+                <br />
+
+                <p>Voici ce que nous avons à vous proposer, un service de qualité. La création de site web personnalisé est notre spécialité.</p>
+            
+            </div>
+            
+            <div id="contenu_services">
+            
+                <!--Image de gauche -->
+                <figure>
+
+                    <img src="css/images/main-feature.png" alt="main" title="Voyez ce que nous sommes capable de faire !" /> 
+
+                </figure>
+
+                <!-- Liste de droite-->
+                <div id="hauteur">
+                    
+                    <ul>
+
+                        <li class="cercle_icones">
+
+                            <i class="fa fa-line-chart fa-lg" aria-hidden="true"></i>
+
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+
+                        </li>
+
+                        <li class="textes_services">
+
+                            <h3>UX design</h3>
+
+                            <p>L'<strong>UX Design</strong>, c'est l'expérience utilisateur (User eXperience en anglais). C'est une discipline qui prend en compte les attentes et les besoins de l'utilisateur pour créer un site web ou une application.</p>
+
+                        </li>
+                        
+                    </ul>    
+                        
+                    <ul>
+                        
+                        <li class="cercle_icones">
+
+                            <i class="fa fa-cubes fa-lg" aria-hidden="true"></i>
+
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+
+                        </li>
+
+                        <li class="textes_services">
+
+                            <h3>UI design</h3>
+
+                            <p>L’<strong>interface utilisateur</strong> est un type d'interface informatique qui permet à un usager de manipuler la machine. Elle coordonne les interactions homme-machine et fait partie du design industriel.</p>
+
+                        </li>
+                   
+                    </ul>    
+                        
+                    <ul>
+                    
+                        <li class="cercle_icones">
+
+                            <i class="fa fa-pie-chart fa-lg" aria-hidden="true"></i>
+
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+
+                        </li>
+
+                        <li class="textes_services">
+
+                            <h3>SEO</h3>
+
+                            <p>L’<strong>optimisation pour les moteurs de recherche</strong>, ou SEO (pour Search Engine Optimization), est un ensemble de techniques pour optimiser la visibilité d'une page web dans les pages de résultats de recherche (les SERP, pour Search Engine Result Pages). Ces techniques cherchent à améliorer la compréhension par les robots d'indexation de la thématique et du contenu d'une ou de l'ensemble des pages d'un site web et à augmenter le trafic naturel du site.</p>
+
+                        </li>
+                        
+                    </ul>
+
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <!-- Section Portfolio -->
+        <section id="portfolio">
+            
+            <div id="infos_portfolio">
+            
+                <h1>Nos projets</h1>
+            
+                <div class="trait">
+                
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+            
+                </div>
+            
+                <br />
+            
+                <p>Voici nos précédents projets. Vous pouvez vous en inspirer pour la création du vôtre ! </p>
+            
+            
+            </div>
+            
+        <!-- Menu -->
+            <div id="conteneur">
+
+                <input type="radio" name="button" id="all" checked/>
+
+                <input type="radio" name="button" id="creat"/>
+
+                <input type="radio" name="button" id="entr"/>
+
+                <input type="radio" name="button" id="portf"/>
+
+                <div id="menu_portfolio">
+
+                    <label for="all" class="all_works">
+
+                        Tous les travaux
+
+                    </label>
+
+                    <label for="creat" class="creat_button">
+
+                        Créatifs
+
+                    </label>    
+
+                    <label for="entr" class="entr_button">
+
+                        Entreprises
+
+                    </label>   
+
+
+                    <label for="portf" class="portfolio">
+
+                        Portfolio
+
+                    </label>
+
+                </div>
+
+
+                <article>
+
+                    <figure class="crea">
+
+                        <img src="css/images/portfolio/01.jpg" alt="1" class="crea" />
+
+                        <figcaption>
+
+                            <h3>Portfolio item 1</h3>
+
+                            <p>C'est créatif !</p>
+
+                            <div class="rond_oeil">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </div>
+
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="crea">
+
+                        <img src="css/images/portfolio/02.jpg" alt="2" class="crea" />
+
+                        <figcaption>
+
+                            <h3>Portfolio item 2</h3>
+
+                            <p>C'est créatif !</p>
+
+                            <div class="rond_oeil">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </div>
+
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure class="port">
+
+                        <img src="css/images/portfolio/03.jpg" alt="3" class="port" />
+
+                        <figcaption>
+
+                            <h3>Portfolio item 3</h3>
+
+                            <p>C'est notre création !</p>
+
+                            <div class="rond_oeil">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </div>
+
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="ent">
+
+                        <img src="css/images/portfolio/04.jpg" alt="4" class="ent" />
+
+                        <figcaption>
+
+                            <h3>Portfolio item 4</h3>
+
+                            <p>C'est pour l'entreprise !</p>
+
+                            <div class="rond_oeil">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </div>
+
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="port">
+
+                        <img src="css/images/portfolio/05.jpg" alt="5" class="port" />
+
+                        <figcaption>
+
+                            <h3>Portfolio item 5</h3>
+
+                            <p>C'est notre création !</p>
+
+                            <div class="rond_oeil">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </div>
+
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="ent">
+
+                        <img src="css/images/portfolio/06.jpg" alt="6" class="ent" />
+
+                        <figcaption>
+
+                            <h3>Portfolio item 6</h3>
+
+                            <p>C'est pour l'entreprise !</p>
+
+                            <div class="rond_oeil">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </div>
+
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="crea">
+
+                        <img src="css/images/portfolio/07.jpg" alt="7" class="crea" />
+
+                        <figcaption>
+
+                            <h3>Portfolio item 7</h3>
+
+                            <p>C'est créatif !</p>
+
+                            <div class="rond_oeil">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </div>
+
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="ent">
+
+                        <img src="css/images/portfolio/08.jpg" alt="8" class="ent" />
+
+                        <figcaption>
+
+                            <h3>Portfolio item 8</h3>
+
+                            <p>C'est pour l'entreprise !</p>
+
+                            <div class="rond_oeil">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </div>
+
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="port">
+
+                        <img src="css/images/portfolio/full.jpg" alt="9" class="port" />
+
+                        <figcaption>
+
+                            <h3>Portfolio item 9</h3>
+
+                            <p>C'est notre création !</p>
+
+                            <div class="rond_oeil">
+
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+                            </div>
+
+
+                        </figcaption>
+
+                    </figure>
+
+                </article>
+
+            </div>
+            
+        </section>
+        
+        <!-- Section Contacts -->
+        <section id="formulaire_contact">
+            
+            <div id="voile"></div>
+            
+            <!-- Carte-->
+            
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2157873703736!2d2.347635615987135!3d48.873162779288904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1502982974584" width="100%" height="600" style="border:0" allowfullscreen></iframe> 
+            
+            <!-- Formulaire de contact non opérationelle -->
+            <form method="#" action="#">
+
+                <p>
+
+                    <strong>Contact Info</strong>
+                    <br /><br />
+                    <strong>WebAgency SAS</strong>
+                    <br />
+                    25 Rue d'Hauteville 75010 Paris 
+                    <br />
+                    <span>Tel :</span> 01 02 03 04 05<br /><br />
+
+                    <label for="nom"></label><input type="text" placeholder="Name" name="nom" id="nom" class="zone" required/> <br />
+
+                    <label for="prenom"></label><input type="text" placeholder="Email" name="prenom" id="prenom" class="zone" required/> <br />
+
+                    <label for="mail"></label><input type="email" placeholder="Subject" name="mail" class="zone" id="mail" /> <br />
+
+                    <textarea placeholder="Message"></textarea> <br />
+
+                    <input type="submit" value="Send Message" class="bouton" />
+
+                </p>
+
+            </form>
+           
+        </section>
+    
+    </body>
+    
+</html>

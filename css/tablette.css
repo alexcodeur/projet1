@@ -1,0 +1,472 @@
+/* Media queries de 480px à 959px */
+
+/* Section service */
+#contenu_services
+{
+    flex-direction: column;
+}
+
+#contenu_services figure
+{
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+}
+
+#hauteur
+{
+    width: 100%;
+}
+
+/* Section carte + formulaire */
+
+#formulaire_contact form
+{
+    width: 200px;
+    height: auto;
+    margin-right: -100px;
+}
+
+#formulaire_contact form input, #formulaire_contact form textarea 
+{
+    width: 190px;
+    
+}
+
+/* Début des Media Queries */
+@media all and (max-width: 765px)
+{
+    
+    /* @keyframes, Animation CSS */
+    @keyframes animationBanniere /* Tous les autres navigateurs */
+    {
+        0%
+        {
+            transform: translateX(0%);
+        }
+
+        20%
+        {
+            transform: translateX(0%);
+        }
+
+        40%
+        {
+            transform: translateX(-100%);
+        }
+
+        60%
+        {
+           transform: translateX(-100%); 
+        }
+
+        80%
+        {
+            transform: translateX(0%);
+        }
+
+        100%
+        {
+            transform: translateX(0%);
+        }
+    }
+
+    @-webkit-keyframes animationBanniere /* Safari, Opera, Chrome */
+    {
+        0%
+        {
+            transform: translateX(0%);
+        }
+
+        20%
+        {
+            transform: translateX(0%);
+        }
+
+        40%
+        {
+            transform: translateX(-100%);
+        }
+
+        60%
+        {
+           transform: translateX(-100%); 
+        }
+
+        80%
+        {
+            transform: translateX(0%);
+        }
+
+        100%
+        {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animationBarre /* Tous les autres navigateurs */
+    {
+        0%{width: 0%;}
+        20%{width: 0%;}
+        45%{width: 100%;}
+        50%{width: 100%;}
+        65%{width: 100%;}
+        70%{width: 0%;}
+        100%{width: 0%;}
+    }
+
+    
+    @-webkit-keyframes animationBarre /* Opera, Safari, Chrome */
+    {
+        0%{width: 0%;}
+        20%{width: 0%;}
+        45%{width: 100%;}
+        50%{width: 100%;}
+        65%{width: 100%;}
+        70%{width: 0%;}
+        100%{width: 0%;}
+    }
+   
+    /* Header */
+    #logo_header
+    {
+        margin-bottom: 20px;
+    }
+    
+    #menu_acceuil
+    {
+        width: 46%;
+        margin-top: -10px;
+    }
+    
+    #menu_acceuil ul
+    {
+        flex-direction: column;
+        padding-bottom: 1px;
+        margin-bottom: -20px;
+    }
+    
+    #menu_acceuil ul li
+    {
+        margin-top: 5px;
+        text-align: center;
+    }
+    
+    #menu_acceuil ul li a:hover
+    {
+        border: none;
+    }
+    
+    /* Section banniere */
+    #banniere label
+    {
+        display: none;
+    }
+    
+    #banniere
+    {
+        padding-top: 140px;
+    }
+    
+    #slider 
+    {
+        width: auto;
+        height: auto;
+    }
+    
+    #banniere #slider h1
+    {
+        top: 120px;
+        left: 10px;
+    }
+    
+    #banniere #slider p
+    {
+        top: 170px;
+        left: 10px;
+    }
+    
+    #slider input
+    {
+        top: 210px;
+        left: 10px;
+    }
+    
+    #slider img
+    {
+        -webkit-animation: animationBanniere 20s ease infinite;
+        -o-animation: animationBanniere 20s ease infinite;
+        -moz-animation: animationBanniere 20s ease infinite;
+        animation: animationBanniere 20s ease infinite;
+        width: 100%;
+        height: 300px;
+    }
+    
+    #barre_defilement
+    {
+        width: 0px;
+        height: 5px;
+        background-color: #5CADD3;
+        -webkit-animation: animationBarre 20s infinite;
+        -o-animation: animationBarre 20s infinite;
+        -moz-animation: animationBarre 20s infinite;
+        animation: animationBarre 20s infinite;
+    }
+    
+    /* Section services */
+    #services
+    {
+        padding-top: 128px;
+    }
+    
+    #contenu_services
+    {
+        flex-direction: column;
+    }
+    
+    #contenu_services figure img
+    {
+        width: 100%;
+    }
+    
+    /* Section portfolio */
+    #portfolio
+    {
+        padding-top: 128px;
+    }
+    
+    #conteneur article
+    {
+        text-align: center;
+    }
+    
+    /* Section formulaire */
+    #formulaire_contact form
+    {
+        top: 100%;
+        right: 50%;
+        left: 25%;
+        width: 50%;
+        text-align: center;
+    }
+    
+    #formulaire_contact form p input[type="email"], #formulaire_contact form p input[type="text"],
+    #formulaire_contact form p textarea,
+    #formulaire_contact form p input[type="submit"]
+    {
+        width: 100%;
+    }
+    
+} 
+
+@media all and (max-width: 479px)
+{
+    
+    /* Header */
+    header
+    {
+        position: relative;
+        position: fixed;
+        height: 40px;
+    }
+    
+    #logo_header img
+    {
+        width: 100%;
+    }
+    
+    #logo_header
+    {
+        position: absolute;
+        top: 0;
+        left: 15%;
+    }
+    
+    header .fa-bars
+    {
+        position: absolute;
+        top: -60px;
+        right: 10%;
+        display: block;
+        color: #7D7D7D;
+        text-align: center;
+        margin-top: 60px;
+    }
+    
+    header label
+    {
+        margin-right: 40%;
+    }
+    
+    #menu_acceuil
+    {
+        display: none;
+        padding: 0;
+        width: 100%;
+    }
+    
+    #menu_acceuil ul li
+    {
+        text-align: center;
+        margin-top: 10px;
+        margin-right: 25%;
+    }
+    
+    input[type="checkbox"]:checked ~ header #menu_acceuil
+    {
+        display: inline-block;
+        width: 95.9%;
+        position: absolute;
+        left: 0;
+        top: 50px;
+    }
+    
+    input[type="checkbox"]:checked ~ header #menu_acceuil ul
+    {
+        margin-top: 20px;
+        flex-direction: row;
+        display: inline;
+    }
+    
+    input[type="checkbox"]:checked ~ header #menu_acceuil ul li
+    {
+        margin-right: 30px;
+    }
+    
+    input[type="checkbox"]:checked ~ header
+    {
+        height: 150px;
+    }
+    
+    input[type="checkbox"]:checked ~ #banniere,
+    input[type="checkbox"]:checked ~ #services,
+    input[type="checkbox"]:checked ~ #portfolio, input[type="checkbox"]:checked ~ #formulaire_contact
+    {
+        padding-top: 175px;
+    }
+    
+    /* section bannière */
+    #banniere
+    {
+        padding-top: 60px;
+    }
+    
+    #banniere #slider h1
+    {
+        width: auto;
+        margin-top: -70px;
+        font-size: 1em;
+        top: 170px;
+    }
+    
+    #banniere #slider p
+    {
+       top: 130px;
+    }
+    
+    #slider input
+    {
+        margin-top: -30px;
+    }
+    
+    /* section services */
+    #services
+    {
+        padding-top: 100px;
+    }
+    
+    #hauteur ul
+    {
+        flex-direction: column;
+    }
+
+    #hauteur ul li.cercle_icones
+    {
+        margin-left: 42%;
+        margin-bottom: 10px;
+    }
+    
+    /* section portfolio */
+    #portfolio
+    {
+        padding-top: 100px;
+    }
+    
+    #menu_portfolio
+    {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    #menu_portfolio label
+    {
+        border-radius: 6px;
+        margin-bottom: 6px;
+    }
+    
+    #menu_portfolio label.all_works, #menu_portfolio label.portfolio
+    {
+        border-radius: 6px;
+    }
+    
+    #conteneur article figure
+    {
+        margin-bottom: 70px;
+    }
+    
+    #conteneur article figure figcaption
+    {
+        width: 100%;
+        height: 70px;
+        position: relative;
+        z-index: 1;
+        margin-left: -50px;
+        left: 50px;
+        text-align: left;
+        display: none;
+    }
+    
+    #conteneur article figure:hover figcaption
+    {
+        display: block;
+        margin-top: -4px;
+    }
+    
+    input[id="all"]:checked ~ #menu_portfolio .all_works::after, input[id="creat"]:checked ~ #menu_portfolio .creat_button::after, input[id="entr"]:checked ~ #menu_portfolio .entr_button::after, input[id="portf"]:checked ~ #menu_portfolio .portfolio::after
+    {
+        content: "";
+        display: block;
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+        border-top: 9px solid #468cad;
+        position: absolute;
+        right: 45%;
+    }
+      
+    /* Contact */
+    #formulaire_contact form
+    {
+        left: 0;
+        width: 94%;
+        padding-left: 7px;
+    }
+     
+    #formulaire_contact form p input[type="text"], #formulaire_contact form p input[type="email"]
+    {
+        width: 90%;
+    }
+    
+    #formulaire_contact form p input[type="submit"]
+    {
+        width: 50%;
+    }
+    
+    #formulaire_contact form p textarea
+    {
+        width: 90%;
+    }
+    
+}
+/* Fin des Media Queries */

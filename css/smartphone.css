@@ -1,0 +1,392 @@
+/* Media queries de 479px à 720px */
+
+/* Header, en-tête de la page */
+header
+{
+    position: relative;
+    position: fixed;
+    height: 130px;
+}
+
+#menu_acceuil ul li a:hover
+{
+    border: none;
+}
+
+#logo_header
+{
+    position: absolute;
+    top: 15px;
+}
+
+#logo_header img
+{
+    width: 100%;
+}
+
+header .fa-bars
+{
+    display: block;
+    color: #7D7D7D;
+    font-size: 4em;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+
+#menu_acceuil
+{
+    position: absolute;
+    display: none;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#menu_acceuil ul li
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#menu_acceuil ul li a
+{
+    font-size: 3em;
+}
+
+input[type="checkbox"]:checked ~ header #menu_acceuil
+{
+    display: block;
+    position: absolute;
+    top: 200px;
+    margin-top: -60px;
+}
+
+input[type="checkbox"]:checked ~ header
+{
+    height: 260px;
+}
+
+input[type="checkbox"]:checked ~ #banniere,
+input[type="checkbox"]:checked ~ #services,
+input[type="checkbox"]:checked ~ #portfolio, input[type="checkbox"]:checked ~ #formulaire_contact
+{
+    padding-top: 300px;
+}
+
+/* Section banniere + Animation CSS */
+/* @keyframes, Animation CSS */
+@keyframes animationBanniere /* Tous les autres navigateurs */
+{
+    0%
+    {
+        transform: translateX(0%);
+    }
+    
+    20%
+    {
+        transform: translateX(0%);
+    }
+    
+    40%
+    {
+        transform: translateX(-100%);
+    }
+    
+    60%
+    {
+       transform: translateX(-100%); 
+    }
+    
+    80%
+    {
+        transform: translateX(0%);
+    }
+    
+    100%
+    {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes animationBanniere /* Safari, Opera, Chrome */
+{
+    0%
+    {
+        transform: translateX(0%);
+    }
+    
+    20%
+    {
+        transform: translateX(0%);
+    }
+    
+    40%
+    {
+        transform: translateX(-100%);
+    }
+    
+    60%
+    {
+       transform: translateX(-100%); 
+    }
+    
+    80%
+    {
+        transform: translateX(0%);
+    }
+    
+    100%
+    {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes animationBarre /* Tous les autres navigateurs */
+{
+    0%{width: 0%;}
+    20%{width: 0%;}
+    45%{width: 100%;}
+    50%{width: 100%;}
+    65%{width: 100%;}
+    70%{width: 0%;}
+    100%{width: 0%;}
+}
+ 
+@-webkit-keyframes animationBarre /* Opera, Safari, Chrome */
+{
+    0%{width: 0%;}
+    20%{width: 0%;}
+    45%{width: 100%;}
+    50%{width: 100%;}
+    65%{width: 100%;}
+    70%{width: 0%;}
+    100%{width: 0%;}
+}
+
+/* Section banniere */
+#banniere
+{
+    padding-top: 220px;
+}
+
+#banniere #slider img
+{
+    animation: animationBanniere 20s infinite;
+}
+
+#banniere #slider #barre_defilement
+{
+    animation: animationBarre 20s infinite;
+    background-color: #5CADD3;
+}
+
+#slider label
+{
+    display: none;
+}
+
+#slider h1
+{
+    font-size: 2.5em;
+    top: 50px;
+}
+
+#slider p
+{
+    font-size: 2em;
+    top: 150px;
+}
+
+#slider input
+{
+    font-size: 2em;
+    width: 200px;
+    height: 70px;
+}
+
+/* Section service */
+/* Bille bleue + trait */
+.trait
+{
+    width:400px;
+}
+
+#infos_services i.fa, #infos_portfolio i.fa
+{
+    top: -20px;
+}
+
+/* Fin bille bleue + trait et début section service */
+#services
+{
+    padding-top: 220px;
+}
+
+#infos_services h1
+{
+    margin-bottom: 30px;
+}
+
+#contenu_services ul
+{
+    flex-direction: column;
+}
+
+.cercle_icones
+{
+    padding: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+#hauteur ul li p
+{
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+#hauteur ul li.cercle_icones
+{
+    margin-left: 40%;
+    margin-bottom: 25px;
+}
+
+#hauteur ul li i.fa-lg
+{
+    font-size: 2.5em;
+}
+
+.fa-circle
+{
+    right: -13px;
+    top: 40px;
+    font-size: 2em;   
+}
+
+#infos_services h1
+{
+    font-size: 4em;
+}
+
+#infos_services p
+{
+    font-size: 2em;
+}
+
+#hauteur .textes_services h3
+{
+    font-size: 3em;
+}
+
+#hauteur .textes_services p
+{
+    font-size: 2em;
+}
+
+/* Section portfolio */
+#portfolio
+{
+    padding-top: 220px;
+}
+
+#infos_portfolio h1
+{
+    font-size: 4em;
+    margin-bottom: 30px;
+}
+
+#infos_portfolio p
+{
+    font-size: 2em;
+}
+
+#conteneur article figure:hover figcaption
+{
+    -moz-transform: translateY(-100px); /* Préfixe pour Chrome, Safari ... */
+    -webkit-transform: translateY(-100px); /* Préfixe pour Firefox, Flock ... */
+    -o-transform: translateY(-100px); /* Préfixe pour Opera */
+    -ms-transform: translateY(-100px); /* pour Internet Explorer */
+    transform: translateY(-100px);
+    -moz-transition: 0.7s linear; /* Préfixe pour Chrome, Safari ... */
+    -webkit-transition: 0.7s linear; /* Préfixe pour Firefox, Flock ... */
+    -o-transition: 0.7s linear; /* Préfixe pour Opera */
+    -ms-transition: 0.7s linear; /* pour Internet Explorer */
+    transition: 0.7s linear;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: visible;
+}
+
+#conteneur article figure figcaption
+{
+    height: 100px;
+}
+
+#menu_portfolio
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#menu_portfolio label
+{
+    font-size: 2em;
+    border-radius: 6px;
+        margin-bottom: 6px;
+}
+
+#menu_portfolio label.all_works, #menu_portfolio label.portfolio
+{
+    border-radius: 6px;
+}
+
+input[id="all"]:checked ~ #menu_portfolio .all_works::after, input[id="creat"]:checked ~ #menu_portfolio .creat_button::after, input[id="entr"]:checked ~ #menu_portfolio .entr_button::after, input[id="portf"]:checked ~ #menu_portfolio .portfolio::after
+{
+    right: 50%;
+}
+
+#conteneur article figure figcaption h3
+{
+    font-size: 2em;
+}
+
+#conteneur article figure figcaption p
+{
+    font-size: 1.5em;
+}
+
+/* Section carte + formulaire */
+#formulaire_contact form
+{
+    left: 0;
+    width: 810px;
+    height: 800px;
+    padding-left: 15%;
+    padding-top: 10%;
+    top: 100%;
+    font-size: 2em;
+}
+
+#formulaire_contact form p input[type="text"], #formulaire_contact form p input[type="email"]
+{
+    width: 80%;
+    height: 50px;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+#formulaire_contact form p textarea
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 80%;
+    font-size: 1em;
+}
+
+#formulaire_contact form p input[type="submit"]
+{
+    width: 50%;
+    height: 50px;
+    font-size: 1em;
+}
